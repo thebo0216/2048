@@ -1,12 +1,12 @@
-var tile;
+var tiles
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight - 4);
-  tile1 = new Tile(0, 0, 100, "grey", 2);
+  createCanvas(500, 500);
+  background(200);
+  tiles = new tile();
 }
 
 function draw() {
-  background(255);
-  tile1.drawBackground();
-  tile1.drawTile();
+  // background(200);
+  tiles.draw();
 }
