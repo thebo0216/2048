@@ -3,8 +3,8 @@ function tile() {
   var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   // var numbers = [1];
   var place = true;
-  var ints = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  var int = random(ints);
+  // var ints = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  // var int = random(ints);
   var two = 2;
   var four = 4;
   var t1 = true;
@@ -17,8 +17,8 @@ function tile() {
   var t8 = true;
   var t9 = true;
 
-	this.draw = function() {
-    var int = random(ints);
+	this.draw = function(int) {
+    // var int = random(ints);
 		var number = random(numbers);
     if (number == 1 && t1 == true && place == true) {
   		this.tile1(int);
@@ -49,166 +49,138 @@ function tile() {
     }
   }
 
-  this.tile1 = function(int) {
+  this.tile1 = function(num) {
   	fill('orange');
     noStroke();
     rect(20, 20, 140, 140);
-    if (int <= 9) {
-      textSize(32);
-      fill(0);
-      text(two, 80, 100);
-    }
-    else {
-      textSize(32);
-      fill(0);
-      text(four, 80, 100);
-    }
+    textSize(32);
+    fill(0);
+    text(num, 80, 100);
     t1 = false;
     place = false;
   }
 
-  this.tile2 = function(int) {
+  this.tile2 = function(num) {
   	fill('orange');
     noStroke();
     rect(180, 20, 140, 140);
-    if (int <= 9) {
-      textSize(32);
-      fill(0);
-      text(two, 240, 100)
-    }
-    else {
-      textSize(32);
-      fill(0);
-      text(four, 240, 100);
-    }
+    textSize(32);
+    fill(0);
+    text(num, 240, 100)
+    textSize(32);
+    fill(0);
+    text(num, 240, 100);
     t2 = false;
     place = false;
   }
 
-  this.tile3 = function(int) {
+  this.tile3 = function(num) {
   	fill('orange');
     noStroke();
     rect(340, 20, 140, 140);
-    if (int <= 9) {
-      textSize(32);
-      fill(0);
-      text(two, 400, 100)
-    }
-    else {
-      textSize(32);
-      fill(0);
-      text(four, 400, 100);
-    }
+    text(num, 400, 100)
+    textSize(32);
+    fill(0);
+    text(num, 400, 100);
     t3 = false;
     place = false;
   }
 
-  this.tile4 = function(int) {
+  this.tile4 = function(num) {
   	fill('orange');
     noStroke();
     rect(20, 180, 140, 140);
-    if (int <= 9) {
-      textSize(32);
-      fill(0);
-      text(two, 80, 260);
-    }
-    else {
-      textSize(32);
-      fill(0);
-      text(four, 80, 260);
-    }
+    text(num, 80, 260)
+    textSize(32);
+    fill(0);
+    text(num, 80, 260);
     t4 = false;
     place = false;
   }
 
-  this.tile5 = function(int) {
+  this.tile5 = function(num) {
   	fill('orange');
     noStroke();
     rect(180, 180, 140, 140);
-    if (int <= 9) {
-      textSize(32);
-      fill(0);
-      text(two, 240, 260);
-    }
-    else {
-      textSize(32);
-      fill(0);
-      text(four, 240, 260);
-    }
+    text(num, 240, 260)
+    textSize(32);
+    fill(0);
+    text(num, 240, 260);
     t5 = false;
     place = false;
   }
 
-    this.tile6 = function(int) {
+    this.tile6 = function(num) {
   	fill('orange');
     noStroke();
     rect(340, 180, 140, 140);
-    if (int <= 9) {
-      textSize(32);
-      fill(0);
-      text(two, 400, 260);
-    }
-    else {
-      textSize(32);
-      fill(0);
-      text(four, 400, 260);
-    }
+    text(num, 400, 260)
+    textSize(32);
+    fill(0);
+    text(num, 400, 260);
     t6 = false;
     place = false;
   }
 
-  this.tile7 = function(int) {
+  this.tile7 = function(num) {
   	fill('orange');
     noStroke();
     rect(20, 340, 140, 140);
-    if (int <= 9) {
-      textSize(32);
-      fill(0);
-      text(two, 80, 420);
-    }
-    else {
-      textSize(32);
-      fill(0);
-      text(four, 80, 420);
-    }
+    text(num, 80, 420)
+    textSize(32);
+    fill(0);
+    text(num, 80, 420);
     t7 = false;
     place = false;
   }
 
-  this.tile8 = function(int) {
+  this.tile8 = function(num) {
   	fill('orange');
     noStroke();
     rect(180, 340, 140, 140);
-    if (int <= 9) {
-      textSize(32);
-      fill(0);
-      text(two, 240, 420);
-    }
-    else {
-      textSize(32);
-      fill(0);
-      text(four, 240, 420);
-    }
+    text(num, 240, 420)
+    textSize(32);
+    fill(0);
+    text(num, 240, 420);
     t8 = false;
     place = false;
   }
 
-    this.tile9 = function(int) {
-  	fill('orange');
+  this.tile9 = function(num) {
+    fill('orange');
     noStroke();
     rect(340, 340, 140, 140);
-    if (int <= 9) {
-      textSize(32);
-      fill(0);
-      text(two, 400, 420);
-    }
-    else {
-      textSize(32);
-      fill(0);
-      text(four, 400, 420);
-    }
+    text(num,400, 420)
+    textSize(32);
+    fill(0);
+    text(num, 400, 420);
     t9 = false;
     place = false;
+  }
+
+  this.moveRight = function(num) {
+    if (t1 == false && keyCode == RIGHT_ARROW) {
+      background(200);
+      fill('orange');
+      noStroke();
+      rect(180, 20, 140, 140);
+      textSize(32);
+      fill(0);
+      text(num, 240, 100);
+      t1 = true;
+      t2 = false;
+      place = true;
+    }
+    if (t2 == false && keyCode == RIGHT_ARROW) {
+      background(200);
+      fill('orange');
+      noStroke();
+      rect(340, 20, 140, 140);
+      text(num, 400, 100)
+      textSize(32);
+      fill(0);
+      text(num, 400, 100);
+    }
   }
 
 }
