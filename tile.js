@@ -17,11 +17,6 @@ function tile() {
   var t8 = true;
   var t9 = true;
 
-<<<<<<< HEAD
-  this.drawBackground = function() {
-    fill(230);
-    rect(width/2 - 200, height/2 - 300, 400, 400);
-=======
 	this.draw = function(int) {
     // var int = random(ints);
 		var number = random(numbers);
@@ -52,7 +47,6 @@ function tile() {
     else if (number == 9 && t9 == true && place == true) {
   		this.tile9(int);
     }
->>>>>>> c657a1206cea8b7cd534775c232c825f953a839f
   }
 
   this.tile1 = function(num) {
@@ -61,13 +55,9 @@ function tile() {
     rect(20, 20, 140, 140);
     textSize(32);
     fill(0);
-<<<<<<< HEAD
-    text(number, this.x + 45, this.y + 55);
-=======
     text(num, 80, 100);
     t1 = false;
     place = false;
->>>>>>> c657a1206cea8b7cd534775c232c825f953a839f
   }
 
   this.tile2 = function(num) {
