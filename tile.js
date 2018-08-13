@@ -8,14 +8,14 @@ function Tile(x, y, length, color, number) {
 
   this.drawBackground = function() {
     fill(230);
-    rect(width/2, height/2, 500, 500);
+    rect(width/2 - 200, height/2 - 300, 400, 400);
   }
 
   this.drawTile = function() {
     fill(color);
     rect(this.x, this.y, this.length, this.length);
     fill(0);
-    text(number, this.x/2, this.y/2);
+    text(number, this.x + 45, this.y + 55);
   }
 
 
